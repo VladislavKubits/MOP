@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.mop">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mop_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MOP_Activity_Autoresation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MOP_Activity_Password"/>
+        <activity android:name=".MOP_Activity_Menu"/>
+        <activity android:name=".MOP_Activity_History_of_MOP_AVM"/>
+        <activity android:name=".MOP_Activity_MOP_NEWS"/>
+        <activity android:name=".MOP_Activity_Timetable"/>
+        <activity android:name=".MOP_Activity_Publication"/>
+        <activity android:name=".MOP_Activity_Abiturient"/>
+    </application>
+
+</manifest>
