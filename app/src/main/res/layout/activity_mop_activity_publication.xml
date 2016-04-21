@@ -6,7 +6,11 @@
     android:focusable="false"
     android:focusableInTouchMode="false"
     android:clickable="false">
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> origin/master
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
