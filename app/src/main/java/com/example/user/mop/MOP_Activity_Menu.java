@@ -12,6 +12,8 @@ public class MOP_Activity_Menu extends Activity {
         setContentView(R.layout.activity_mop_activity_menu);
     }
     public void goToActivity_History(View view){
+        Intent intent = new Intent(this, MOP_Activity_History_of_MOP_AVM.class);
+        startActivity(intent);
     }
     public void goToActivity_NEWS(View view){
         Intent intent = new Intent(this, MOP_Activity_MOP_NEWS.class);
