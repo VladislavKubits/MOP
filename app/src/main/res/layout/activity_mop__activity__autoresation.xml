@@ -23,6 +23,15 @@
             android:layout_height="match_parent"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@drawable/autoresation1"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_centerHorizontal="true" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -35,14 +44,6 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="45dp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView"
-                android:src="@drawable/autoresation1"
-                android:layout_alignTop="@+id/textView4"
-                android:layout_centerHorizontal="true" />
 
             <Button
                 android:layout_width="wrap_content"
