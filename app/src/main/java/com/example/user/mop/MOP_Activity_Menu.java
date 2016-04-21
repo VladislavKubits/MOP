@@ -10,8 +10,6 @@ public class MOP_Activity_Menu extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mop_activity_menu);
-        Intent intent = new Intent(this, MOP_Activity_History_of_MOP_AVM.class);
-        startActivity(intent);
     }
     public void goToActivity_History(View view){
     }
