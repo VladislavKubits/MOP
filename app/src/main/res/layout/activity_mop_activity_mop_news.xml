@@ -4,6 +4,19 @@
     android:layout_height="match_parent"
     android:background="#13f1cc">
 
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView4"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
+    </ScrollView>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -11,9 +24,8 @@
         android:text="Новости кафедры"
         android:id="@+id/textView"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="42dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:textSize="40dp"
-        android:textStyle="bold|normal" />
+        android:textStyle="bold|normal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

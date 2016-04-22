@@ -8,63 +8,59 @@
     android:clickable="false"
     android:background="#13f1cc">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Отправить новость в соцсети"
+        android:id="@+id/textView6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|normal"
+        android:textSize="35dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Публикация"
-            android:id="@+id/textView6"
-            android:layout_gravity="center_horizontal"
-            android:textStyle="bold|normal"
-            android:textSize="40dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Введите сообщение" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:src="@drawable/publication_facebook"
+        android:layout_below="@+id/textView6"
+        android:layout_toLeftOf="@+id/editText3"
+        android:layout_toStartOf="@+id/editText3" />
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="166dp"
-            android:inputType="textMultiLine"
-            android:ems="10"
-            android:id="@+id/editText"
-            android:hint="введите сообщение"
-            android:lines="12"
-            android:singleLine="false"
-            android:selectAllOnFocus="false"
-            android:phoneNumber="false"
-            android:textIsSelectable="false"
-            android:longClickable="false"
-            android:linksClickable="false"
-            android:focusableInTouchMode="false"
-            android:focusable="false"
-            android:enabled="true"
-            android:elegantTextHeight="false"
-            android:editable="false"
-            android:contextClickable="false"
-            android:clickable="false"
-            android:allowUndo="false"
-            android:autoText="false"
-            android:password="false"
-            android:textSize="16dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/publication_vk" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView5"
-            android:src="@drawable/publication_facebook"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView7"
+        android:src="@drawable/ublication_twitter"
+        android:layout_below="@+id/textView6"
+        android:layout_toRightOf="@+id/editText3"
+        android:layout_toEndOf="@+id/editText3"
+        android:layout_alignBottom="@+id/imageView6" />
 
-    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отправить"
+        android:id="@+id/button8"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp" />
 
 </RelativeLayout>
