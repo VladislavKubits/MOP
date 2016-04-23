@@ -73,7 +73,8 @@
                 android:src="@drawable/autoresation3"
                 android:layout_alignTop="@+id/button7"
                 android:layout_toLeftOf="@+id/imageView2"
-                android:layout_toStartOf="@+id/imageView2" />
+                android:layout_toStartOf="@+id/imageView2"
+                android:layout_marginRight="25dp" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -86,6 +87,28 @@
                 android:layout_alignTop="@+id/button7"
                 android:layout_toRightOf="@+id/button7"
                 android:layout_toEndOf="@+id/button7" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="АБИТУРИЕНТ"
+                android:id="@+id/button9"
+                android:onClick="goToActivity_Abiturient"
+                android:layout_above="@+id/button7"
+                android:layout_alignRight="@+id/button10"
+                android:layout_alignEnd="@+id/button10"
+                android:layout_alignLeft="@+id/button10"
+                android:layout_alignStart="@+id/button10" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ОТПРАВИТЬ НОВОСТЬ В СОЦСЕТИ"
+                android:id="@+id/button10"
+                android:onClick="goToActivity_Publication"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
         </RelativeLayout>
     </ScrollView>
 

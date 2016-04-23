@@ -16,4 +16,25 @@ public class MOP_Activity_Autoresation extends AppCompatActivity {
         Intent intent = new Intent(this, MOP_Activity_Password.class);
         startActivity(intent);
     }
+    public void goToActivity_History(View view){
+        Intent intent = new Intent(this, MOP_Activity_History_of_MOP_AVM.class);
+        startActivity(intent);
+    }
+    public void goToActivity_NEWS(View view){
+        Intent intent = new Intent(this, MOP_Activity_MOP_NEWS.class);
+        startActivity(intent);
+    }
+    public void goToActivity_Timetable(View view){
+        Intent intent = new Intent(this, MOP_Activity_Timetable.class);
+        startActivity(intent);
+    }
+    public void goToActivity_Publication(View view){
+        Intent intent = new Intent(this, MOP_Activity_Publication.class);
+        startActivity(intent);
+    }
+    public void goToActivity_Abiturient(View view){
+        Intent intent = new Intent(this, MOP_Activity_Abiturient.class);
+        startActivity(intent);
+    }
 }
+

@@ -25,7 +25,17 @@
         android:id="@+id/editText3"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:text="Введите сообщение" />
+        android:backgroundTint="#000000"
+        android:editable="false"
+        android:hint="Введите сообщение..."
+        android:elegantTextHeight="false"
+        android:enabled="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:linksClickable="false"
+        android:longClickable="false"
+        android:textColorHint="#000000"
+        android:textIsSelectable="false" />
 
     <ImageView
         android:layout_width="wrap_content"
