@@ -21,6 +21,7 @@
         <activity android:name=".MOP_Activity_Timetable"/>
         <activity android:name=".MOP_Activity_Publication"/>
         <activity android:name=".MOP_Activity_Abiturient"/>
+        <activity android:name=".MOP_Activity_GoogleSfedu"/>
     </application>
 
 </manifest>

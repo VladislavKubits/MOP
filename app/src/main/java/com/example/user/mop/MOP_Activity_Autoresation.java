@@ -13,7 +13,7 @@ public class MOP_Activity_Autoresation extends AppCompatActivity {
         setContentView(R.layout.activity_mop__activity__autoresation);
     }
     public void goToActivity_Password(View view){
-        Intent intent = new Intent(this, MOP_Activity_Password.class);
+        Intent intent = new Intent(this, MOP_Activity_GoogleSfedu.class);
         startActivity(intent);
     }
     public void goToActivity_History(View view){
