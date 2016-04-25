@@ -16,7 +16,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".MOP_Activity_Password"/>
-        <activity android:name=".MOP_Activity_Menu"/>
         <activity android:name=".MOP_Activity_History_of_MOP_AVM"/>
         <activity android:name=".MOP_Activity_MOP_NEWS"/>
         <activity android:name=".MOP_Activity_Timetable"/>
