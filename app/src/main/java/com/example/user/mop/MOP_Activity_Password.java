@@ -15,7 +15,7 @@ public class MOP_Activity_Password extends Activity{
         setContentView(R.layout.activity_mop_activity_password);
     }
     public void goToActivity_Menu(View view){
-        Intent intent = new Intent(this, MOP_Activity_Menu.class);
+        Intent intent = new Intent(this, MOP_Activity_Autoresation.class);
          startActivity(intent);
     }
 }
