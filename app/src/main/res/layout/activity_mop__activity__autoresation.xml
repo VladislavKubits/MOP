@@ -89,17 +89,17 @@
                 android:layout_toEndOf="@+id/button7" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="НОВОСТИ"
+                android:text="АБИТУРИЕНТ"
                 android:id="@+id/button9"
-                android:onClick="goToActivity_NEWS"
+                android:onClick="goToActivity_Abiturient"
                 android:layout_above="@+id/button7"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="-350dp" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="РАСПИСАНИЕ"
                 android:id="@+id/button10"
@@ -108,7 +108,7 @@
                 android:layout_centerHorizontal="true" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="О КАФЕДРЕ"
                 android:id="@+id/button11"
@@ -117,20 +117,20 @@
                 android:layout_centerHorizontal="true" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ОТПРАВИТЬ НОВОСТЬ В СОЦСЕТИ"
+                android:text="НОВОСТИ"
                 android:id="@+id/button12"
-                android:onClick="goToActivity_Publication"
+                android:onClick="goToActivity_NEWS"
                 android:layout_above="@+id/button11"
                 android:layout_centerHorizontal="true" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="АБИТУРИЕНТ"
+                android:text="ОТПРАВИТЬ НОВОСТЬ В СОЦСЕТИ"
                 android:id="@+id/button13"
-                android:onClick="goToActivity_Abiturient"
+                android:onClick="goToActivity_Publication"
                 android:layout_above="@+id/button12"
                 android:layout_centerHorizontal="true" />
 
