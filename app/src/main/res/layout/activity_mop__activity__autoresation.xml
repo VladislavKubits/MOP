@@ -91,22 +91,47 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="АБИТУРИЕНТ"
+                android:text="НОВОСТИ"
                 android:id="@+id/button9"
-                android:onClick="goToActivity_Abiturient"
+                android:onClick="goToActivity_NEWS"
                 android:layout_above="@+id/button7"
-                android:layout_alignRight="@+id/button10"
-                android:layout_alignEnd="@+id/button10"
-                android:layout_alignLeft="@+id/button10"
-                android:layout_alignStart="@+id/button10" />
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="РАСПИСАНИЕ"
+                android:id="@+id/button10"
+                android:onClick="goToActivity_Timetable"
+                android:layout_above="@+id/button9"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="О КАФЕДРЕ"
+                android:id="@+id/button11"
+                android:onClick="goToActivity_History"
+                android:layout_above="@+id/button10"
+                android:layout_centerHorizontal="true" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ОТПРАВИТЬ НОВОСТЬ В СОЦСЕТИ"
-                android:id="@+id/button10"
+                android:id="@+id/button12"
                 android:onClick="goToActivity_Publication"
-                android:layout_centerVertical="true"
+                android:layout_above="@+id/button11"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="АБИТУРИЕНТ"
+                android:id="@+id/button13"
+                android:onClick="goToActivity_Abiturient"
+                android:layout_above="@+id/button12"
                 android:layout_centerHorizontal="true" />
 
         </RelativeLayout>
