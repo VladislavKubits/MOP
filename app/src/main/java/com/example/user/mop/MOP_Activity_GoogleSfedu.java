@@ -11,8 +11,12 @@ public class MOP_Activity_GoogleSfedu extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mop_activity_googlesfedu);
     }
-    public void goToActivity_Password(View view){
-        Intent intent = new Intent(this, MOP_Activity_Password.class);
+    public void goToActivity_GooglePassword(View view){
+        Intent intent = new Intent(this, MOP_Activity_GooglePassword.class);
+        startActivity(intent);
+    }
+    public void goToActivity_SfeduPassword(View view){
+        Intent intent = new Intent(this, );
         startActivity(intent);
     }
 }
