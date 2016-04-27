@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MOP</string>
+    <string name="header">Авторизация</string>
+    <string name="hint1">Name</string>
+    <string name="hint2">Password</string>
+    <string name="namebutton">Авторизоваться</string>
 </resources>

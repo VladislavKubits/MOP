@@ -15,13 +15,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MOP_Activity_Password"/>
         <activity android:name=".MOP_Activity_History_of_MOP_AVM"/>
         <activity android:name=".MOP_Activity_MOP_NEWS"/>
         <activity android:name=".MOP_Activity_Timetable"/>
         <activity android:name=".MOP_Activity_Publication"/>
         <activity android:name=".MOP_Activity_Abiturient"/>
         <activity android:name=".MOP_Activity_GoogleSfedu"/>
+        <activity android:name=".MOP_Activity_Sfedupassword"/>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>
