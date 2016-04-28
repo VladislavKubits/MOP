@@ -44,12 +44,6 @@ public class MOP_Activity_Timetable extends AppCompatActivity {
                                                       startActivity(i);
                                                   }
 
-                                                  if (id == 2) {
-                                                      Intent i = new Intent(MOP_Activity_Timetable.this,
-                                                              MOP_Activity_Timetable.class);
-                                                      startActivity(i);
-                                                  }
-
                                                   if (id == 3) {
                                                       Intent i = new Intent(MOP_Activity_Timetable.this,
                                                               MOP_Activity_History_of_MOP_AVM.class);

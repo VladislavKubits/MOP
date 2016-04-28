@@ -37,12 +37,6 @@ public class MOP_Activity_MOP_NEWS extends AppCompatActivity {
                                                       startActivity(i);
                                                   }
 
-                                                  if (id == 1) {
-                                                      Intent i = new Intent(MOP_Activity_MOP_NEWS.this,
-                                                              MOP_Activity_MOP_NEWS.class);
-                                                      startActivity(i);
-                                                  }
-
                                                   if (id == 2) {
                                                       Intent i = new Intent(MOP_Activity_MOP_NEWS.this,
                                                               MOP_Activity_Timetable.class);

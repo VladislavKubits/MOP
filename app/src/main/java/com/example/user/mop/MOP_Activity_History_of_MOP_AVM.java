@@ -50,12 +50,6 @@ public class MOP_Activity_History_of_MOP_AVM extends AppCompatActivity {
                                                       startActivity(i);
                                                   }
 
-                                                  if (id == 3) {
-                                                      Intent i = new Intent(MOP_Activity_History_of_MOP_AVM.this,
-                                                              MOP_Activity_History_of_MOP_AVM.class);
-                                                      startActivity(i);
-                                                  }
-
                                                   if (id == 4) {
                                                       Intent i = new Intent(MOP_Activity_History_of_MOP_AVM.this,
                                                               MOP_Activity_Autoresation.class);

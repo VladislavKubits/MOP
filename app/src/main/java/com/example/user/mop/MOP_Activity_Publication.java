@@ -31,11 +31,6 @@ public class MOP_Activity_Publication extends AppCompatActivity {
                                               @Override
                                               public void onItemSelected(AdapterView<?> parent,
                                                                          View view, int position, long id) {
-                                                  if (id == 0) {
-                                                      Intent i = new Intent(MOP_Activity_Publication.this,
-                                                              MOP_Activity_Publication.class);
-                                                      startActivity(i);
-                                                  }
 
                                                   if (id == 1) {
                                                       Intent i = new Intent(MOP_Activity_Publication.this,

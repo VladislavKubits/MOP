@@ -60,12 +60,6 @@ public class MOP_Activity_Abiturient extends AppCompatActivity {
                                                               MOP_Activity_Autoresation.class);
                                                       startActivity(i);
                                                   }
-
-                                                  if (id == 5) {
-                                                      Intent i = new Intent(MOP_Activity_Abiturient.this,
-                                                              MOP_Activity_Abiturient.class);
-                                                      startActivity(i);
-                                                  }
                                               }
 
                                               @Override
