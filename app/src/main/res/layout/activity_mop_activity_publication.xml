@@ -18,14 +18,13 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textStyle="bold|normal"
-        android:textSize="35dp" />
+        android:textSize="35dp"
+        android:layout_marginTop="50dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText3"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:backgroundTint="#000000"
         android:editable="false"
         android:hint="Введите сообщение..."
@@ -36,13 +35,17 @@
         android:linksClickable="false"
         android:longClickable="false"
         android:textColorHint="#000000"
-        android:textIsSelectable="false" />
+        android:textIsSelectable="false"
+        android:layout_marginBottom="102dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView5"
         android:src="@drawable/publication_facebook"
+        android:layout_marginTop="50dp"
         android:layout_below="@+id/textView6"
         android:layout_toLeftOf="@+id/editText3"
         android:layout_toStartOf="@+id/editText3" />
@@ -51,16 +54,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView6"
-        android:layout_below="@+id/textView6"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/publication_vk" />
+        android:src="@drawable/publication_vk"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView7"
         android:src="@drawable/ublication_twitter"
-        android:layout_below="@+id/textView6"
+        android:layout_alignTop="@+id/imageView5"
         android:layout_toRightOf="@+id/editText3"
         android:layout_toEndOf="@+id/editText3"
         android:layout_alignBottom="@+id/imageView6" />
@@ -72,6 +75,13 @@
         android:id="@+id/button8"
         android:layout_below="@+id/editText3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="64dp" />
+        android:layout_marginTop="-70dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

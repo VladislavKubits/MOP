@@ -27,7 +27,15 @@
                 android:textStyle="bold|normal"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="450dp" />
+                android:layout_marginBottom="450dp"
+                android:layout_marginTop="50dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner3"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
         </RelativeLayout>
     </ScrollView>
 
