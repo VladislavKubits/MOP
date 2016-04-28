@@ -21,7 +21,7 @@ public class MOP_Activity_Timetable extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, menu);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinner2);
+        Spinner spinner = (Spinner) findViewById(R.id.spinner5);
         spinner.setAdapter(adapter);
 
         spinner.setPrompt("Главное меню");
