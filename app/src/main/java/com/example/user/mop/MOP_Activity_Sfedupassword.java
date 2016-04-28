@@ -3,12 +3,10 @@ package com.example.user.mop;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-/**
- * Created by Kirill on 26.04.2016.
- */
-public class MOP_Activity_Sfedupassword extends Activity{
+public class MOP_Activity_Sfedupassword extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
