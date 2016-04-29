@@ -19,7 +19,7 @@
         android:layout_centerHorizontal="true"
         android:textStyle="bold|normal"
         android:textSize="35dp"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="70dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -45,7 +45,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView5"
         android:src="@drawable/publication_facebook"
-        android:layout_marginTop="50dp"
         android:layout_below="@+id/textView6"
         android:layout_toLeftOf="@+id/editText3"
         android:layout_toStartOf="@+id/editText3" />
@@ -81,7 +80,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/spinner4"
+        android:background="#ffffff"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

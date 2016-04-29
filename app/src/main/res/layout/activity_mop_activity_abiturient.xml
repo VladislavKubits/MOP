@@ -22,7 +22,7 @@
                 android:layout_alignParentTop="true"
                 android:textStyle="bold|normal"
                 android:textSize="35dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="65dp"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentLeft="true"
@@ -30,12 +30,13 @@
 
         </RelativeLayout>
     </ScrollView>
-
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/spinner2"
+        android:background="#ffffff"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
