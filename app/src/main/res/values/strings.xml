@@ -1,7 +1,14 @@
 <resources>
-    <string name="app_name">MOP</string>
+    <string name="app_name">МОП</string>
     <string name="header">Авторизация</string>
     <string name="hint1">Name</string>
     <string name="hint2">Password</string>
     <string name="namebutton">Авторизоваться</string>
+    <string name="news">Новости</string>
+    <string name="schedule">Расписание</string>
+    <string name="About_the_department">О кафедре</string>
+    <string name="Send_news_to_social_networks">Отправить новость в соцсети</string>
+    <string name="authorization">Авторизация</string>
+    <string name="Enrollee">Абитуриент</string>
+
 </resources>

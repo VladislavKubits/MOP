@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/news"
+        android:orderInCategory="100"
+        android:title="@string/news"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/schedule"
+        android:orderInCategory="100"
+        android:title="@string/schedule"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/About_the_department"
+        android:orderInCategory="100"
+        android:title="@string/About_the_department"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Send_news_to_social_networks"
+        android:orderInCategory="100"
+        android:title="@string/Send_news_to_social_networks"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/authorization"
+        android:orderInCategory="100"
+        android:title="@string/authorization"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Enrollee"
+        android:orderInCategory="100"
+        android:title="@string/Enrollee"
+        app:showAsAction="never" />
+
+</menu>

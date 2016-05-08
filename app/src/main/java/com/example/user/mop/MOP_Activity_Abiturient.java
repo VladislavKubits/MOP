@@ -1,71 +1,57 @@
 package com.example.user.mop;
 
-import android.content.Intent;
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 
 public class MOP_Activity_Abiturient extends AppCompatActivity {
 
-    String[] menu = {"Отправить новость в соцсети", "Новости", "Расписание", "О кафедре", "Авторизация", "Абитуриент"};
+    private Toolbar toolbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mop_activity_abiturient);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, menu);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        toolbar=(Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(toolbar);
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinner2);
-        spinner.setAdapter(adapter);
+    }
 
-        spinner.setPrompt("Главное меню");
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
 
-        spinner.setSelection(5);
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id=item.getItemId();
 
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                                              @Override
-                                              public void onItemSelected(AdapterView<?> parent,
-                                                                         View view, int position, long id) {
-                                                  if (id == 0) {
-                                                      Intent i = new Intent(MOP_Activity_Abiturient.this,
-                                                              MOP_Activity_Publication.class);
-                                                      startActivity(i);
-                                                  }
+        if (id==R.id.news){
+            return true;
+        }
+        if (id==R.id.schedule){
+            return true;
+        }
+        if (id==R.id.About_the_department){
+            return true;
+        }
+        if (id==R.id.Send_news_to_social_networks){
+            return true;
+        }
+        if (id==R.id.authorization){
+            return true;
+        }
+        if (id==R.id.Enrollee){
+            return true;
+        }
 
-                                                  if (id == 1) {
-                                                      Intent i = new Intent(MOP_Activity_Abiturient.this,
-                                                              MOP_Activity_MOP_NEWS.class);
-                                                      startActivity(i);
-                                                  }
+        return super.onOptionsItemSelected(item);
 
-                                                  if (id == 2) {
-                                                      Intent i = new Intent(MOP_Activity_Abiturient.this,
-                                                              MOP_Activity_Timetable.class);
-                                                      startActivity(i);
-                                                  }
-
-                                                  if (id == 3) {
-                                                      Intent i = new Intent(MOP_Activity_Abiturient.this,
-                                                              MOP_Activity_History_of_MOP_AVM.class);
-                                                      startActivity(i);
-                                                  }
-
-                                                  if (id == 4) {
-                                                      Intent i = new Intent(MOP_Activity_Abiturient.this,
-                                                              MOP_Activity_Autoresation.class);
-                                                      startActivity(i);
-                                                  }
-                                              }
-
-                                              @Override
-                                              public void onNothingSelected(AdapterView<?> parent) {
-                                              }
-                                          }
-        );
     }
 }
