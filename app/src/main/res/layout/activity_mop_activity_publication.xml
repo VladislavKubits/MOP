@@ -76,13 +76,4 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-70dp" />
 
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinner4"
-        android:background="#ffffff"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
 </RelativeLayout>
