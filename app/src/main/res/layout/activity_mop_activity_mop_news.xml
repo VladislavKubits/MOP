@@ -29,6 +29,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="450dp"
                 android:layout_marginTop="65dp" />
+            <include layout="@layout/toolbar"/>
 
         </RelativeLayout>
     </ScrollView>
