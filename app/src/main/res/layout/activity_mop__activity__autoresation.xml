@@ -26,12 +26,69 @@
             android:layout_centerHorizontal="true">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView"
-                android:src="@drawable/autoresation1"
-                android:layout_alignTop="@+id/textView4"
-                android:layout_centerHorizontal="true" />
+                android:src="@drawable/autoresation3"
+                android:layout_marginTop="85dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="АВТОРИЗАЦИЯ"
+                android:id="@+id/button7"
+                android:onClick="goToActivity_Password"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="АБИТУРИЕНТ"
+                android:id="@+id/button9"
+                android:onClick="goToActivity_Abiturient"
+                android:layout_below="@+id/button7"
+                android:layout_alignParentLeft="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="РАСПИСАНИЕ"
+                android:id="@+id/button10"
+                android:onClick="goToActivity_Timetable"
+                android:layout_below="@+id/button9"
+                android:layout_alignParentLeft="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="О КАФЕДРЕ"
+                android:id="@+id/button11"
+                android:onClick="goToActivity_History"
+                android:layout_below="@+id/button10"
+                android:layout_alignParentLeft="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="НОВОСТИ"
+                android:id="@+id/button12"
+                android:onClick="goToActivity_NEWS"
+                android:layout_below="@+id/button11"
+                android:layout_alignParentLeft="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ОТПРАВИТЬ НОВОСТЬ В СОЦСЕТИ"
+                android:id="@+id/button13"
+                android:onClick="goToActivity_Publication"
+                android:layout_below="@+id/button12"
+                android:layout_alignParentLeft="true" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -43,96 +100,6 @@
                 android:textSize="80dp"
                 android:textStyle="bold|normal"
                 android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="45dp" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="АВТОРИЗАЦИЯ"
-                android:id="@+id/button7"
-                android:onClick="goToActivity_Password"
-                android:layout_alignBottom="@+id/imageView"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="45dp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView2"
-                android:src="@drawable/autoresation2"
-                android:layout_above="@+id/imageView"
-                android:layout_centerHorizontal="true" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView3"
-                android:layout_alignBottom="@+id/imageView"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:src="@drawable/autoresation3"
-                android:layout_alignTop="@+id/button7"
-                android:layout_toLeftOf="@+id/imageView2"
-                android:layout_toStartOf="@+id/imageView2"
-                android:layout_marginRight="25dp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView4"
-                android:layout_alignBottom="@+id/imageView"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:src="@drawable/autoresation4"
-                android:layout_alignTop="@+id/button7"
-                android:layout_toRightOf="@+id/button7"
-                android:layout_toEndOf="@+id/button7" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="АБИТУРИЕНТ"
-                android:id="@+id/button9"
-                android:onClick="goToActivity_Abiturient"
-                android:layout_above="@+id/button7"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="-350dp" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="РАСПИСАНИЕ"
-                android:id="@+id/button10"
-                android:onClick="goToActivity_Timetable"
-                android:layout_above="@+id/button9"
-                android:layout_centerHorizontal="true" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="О КАФЕДРЕ"
-                android:id="@+id/button11"
-                android:onClick="goToActivity_History"
-                android:layout_above="@+id/button10"
-                android:layout_centerHorizontal="true" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="НОВОСТИ"
-                android:id="@+id/button12"
-                android:onClick="goToActivity_NEWS"
-                android:layout_above="@+id/button11"
-                android:layout_centerHorizontal="true" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="ОТПРАВИТЬ НОВОСТЬ В СОЦСЕТИ"
-                android:id="@+id/button13"
-                android:onClick="goToActivity_Publication"
-                android:layout_above="@+id/button12"
                 android:layout_centerHorizontal="true" />
 
         </RelativeLayout>
