@@ -5,12 +5,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.vk.sdk.util.VKUtil;
+
+import java.util.Arrays;
+
 public class MOP_Activity_Autoresation extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mop__activity__autoresation);
+        String[] fingerprints = VKUtil.getCertificateFingerprint(this, this.getPackageName());
+        System.out.println(Arrays.asList(fingerprints));
     }
     public void goToActivity_Password(View view){
         Intent intent = new Intent(this, MOP_Activity_GoogleSfedu.class);
