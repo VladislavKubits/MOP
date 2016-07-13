@@ -10,5 +10,6 @@
     <string name="Send_news_to_social_networks">Отправить новость в соцсети</string>
     <string name="authorization">Авторизация</string>
     <string name="Enrollee">Абитуриент</string>
+    <integer name="com_vk_sdk_AppId">5545742</integer>
 
 </resources>
