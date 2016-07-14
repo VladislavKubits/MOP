@@ -8,16 +8,20 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.vk.sdk.VKScope;
+import com.vk.sdk.VKSdk;
+
 
 public class MOP_Activity_MOP_NEWS extends AppCompatActivity {
     private Toolbar toolbar;
 
-
+    private String[] scope=new String[] {VKScope.WALL};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mop_activity_mop_news);
+        VKSdk.login(this,scope);
 
         toolbar=(Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);

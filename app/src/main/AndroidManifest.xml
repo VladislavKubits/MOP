@@ -9,6 +9,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/mop_launcher"
         android:label="МОП"
+        android:name=".Application"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MOP_Activity_Autoresation">
