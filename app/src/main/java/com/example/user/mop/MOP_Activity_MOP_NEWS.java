@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.vk.sdk.VKAccessToken;
 import com.vk.sdk.VKCallback;
@@ -17,16 +19,25 @@ import com.vk.sdk.api.VKError;
 import com.vk.sdk.api.VKParameters;
 import com.vk.sdk.api.VKRequest;
 import com.vk.sdk.api.VKResponse;
-import com.vk.sdk.api.methods.VKApiGroups;
 import com.vk.sdk.api.methods.VKApiUsers;
 import com.vk.sdk.api.methods.VKApiWall;
 import com.vk.sdk.api.model.VKList;
 
+import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+
+import static android.R.layout.simple_list_item_1;
 
 
 public class MOP_Activity_MOP_NEWS extends AppCompatActivity {
     private Toolbar toolbar;
+
+    ListView listView;
+    ArrayList<String> arrayList = new ArrayList<>();
+    ArrayAdapter<String> arrayAdapter;
 
     private String[] scope = new String[]{VKScope.WALL};
 
@@ -37,6 +48,7 @@ public class MOP_Activity_MOP_NEWS extends AppCompatActivity {
         VKSdk.login(this, scope);
 
         toolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        listView = (ListView) findViewById(R.id.listView);
         setSupportActionBar(toolbar);
 
     }
@@ -105,9 +117,24 @@ public class MOP_Activity_MOP_NEWS extends AppCompatActivity {
                                 public void onComplete(VKResponse response) {
                                     super.onComplete(response);
 
-                                    System.out.println(response.responseString);
+                                    // System.out.println(response.responseString);
+                                    try {
+                                        JSONObject jsonobject = (JSONObject) response.json.get("response");
+                                        JSONArray jsonArray = (JSONArray) jsonobject.get("items");
+                                        for (int i = 0; i < jsonArray.length(); i++) {
+                                            JSONObject post = (JSONObject) jsonArray.get(i);
+                                            arrayList.add(post.getString("text"));
+                                            arrayAdapter = new ArrayAdapter<String>(MOP_Activity_MOP_NEWS.this, android.R.layout.simple_list_item_1, arrayList);
+                                            listView.setAdapter(arrayAdapter);
+                                        }
+                                    } catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
+
+
                                 }
                             });
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }

@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#13f1cc">
+    android:background="#13f1cc"
+    android:weightSum="1">
 
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/scrollView4"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" >
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
+
+            <include layout="@layout/toolbar"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -27,11 +21,12 @@
                 android:textStyle="bold|normal"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="450dp"
-                android:layout_marginTop="65dp" />
-            <include layout="@layout/toolbar"/>
+                android:layout_marginBottom="45dp"/>
 
-        </RelativeLayout>
-    </ScrollView>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"/>
 
-</RelativeLayout>
+
+</LinearLayout>
