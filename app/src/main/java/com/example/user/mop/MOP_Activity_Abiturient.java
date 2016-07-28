@@ -21,7 +21,6 @@ public class MOP_Activity_Abiturient extends AppCompatActivity {
 
         toolbar=(Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
-
     }
 
     @Override
