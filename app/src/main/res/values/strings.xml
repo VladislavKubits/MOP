@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">МОП</string>
+    <string name="app_name">Главное меню</string>
     <string name="header">Авторизация</string>
     <string name="hint1">Name</string>
     <string name="hint2">Password</string>
