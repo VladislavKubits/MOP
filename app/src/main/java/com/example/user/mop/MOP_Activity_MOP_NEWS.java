@@ -128,7 +128,7 @@ public class MOP_Activity_MOP_NEWS extends AppCompatActivity {
                                     Example example = new Gson().fromJson(response.responseString, com.example.entity.Example.class);
                                     news_adapter.setItems(example.getResponse().getItems());
                                     news_adapter.notifyDataSetChanged();
-                                    
+
                                 }
                             });
 
