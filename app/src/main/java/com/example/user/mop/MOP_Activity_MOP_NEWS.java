@@ -4,12 +4,17 @@ package com.example.user.mop;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.entity.Example;
+import com.example.entity.Item;
+import com.google.gson.Gson;
 import com.vk.sdk.VKAccessToken;
 import com.vk.sdk.VKCallback;
 import com.vk.sdk.VKScope;
@@ -35,9 +40,10 @@ import static android.R.layout.simple_list_item_1;
 public class MOP_Activity_MOP_NEWS extends AppCompatActivity {
     private Toolbar toolbar;
 
-    ListView listView;
+    RecyclerView recyclerView;
     ArrayList<String> arrayList = new ArrayList<>();
-    ArrayAdapter<String> arrayAdapter;
+    //ArrayAdapter<String> arrayAdapter;
+    NEWS_Adapter news_adapter;
 
     private String[] scope = new String[]{VKScope.WALL};
 
@@ -48,7 +54,10 @@ public class MOP_Activity_MOP_NEWS extends AppCompatActivity {
         VKSdk.login(this, scope);
 
         toolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        listView = (ListView) findViewById(R.id.listView);
+        recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        news_adapter = new NEWS_Adapter();
+        recyclerView.setAdapter(news_adapter);
         setSupportActionBar(toolbar);
 
     }
@@ -118,18 +127,22 @@ public class MOP_Activity_MOP_NEWS extends AppCompatActivity {
                                     super.onComplete(response);
 
                                     // System.out.println(response.responseString);
-                                    try {
-                                        JSONObject jsonobject = (JSONObject) response.json.get("response");
-                                        JSONArray jsonArray = (JSONArray) jsonobject.get("items");
-                                        for (int i = 0; i < jsonArray.length(); i++) {
-                                            JSONObject post = (JSONObject) jsonArray.get(i);
-                                            arrayList.add(post.getString("text"));
-                                            arrayAdapter = new ArrayAdapter<String>(MOP_Activity_MOP_NEWS.this, android.R.layout.simple_list_item_1, arrayList);
-                                            listView.setAdapter(arrayAdapter);
-                                        }
-                                    } catch (JSONException e) {
-                                        e.printStackTrace();
-                                    }
+//                                    try {
+//                                        JSONObject jsonobject = (JSONObject) response.json.get("response");
+//                                        JSONArray jsonArray = (JSONArray) jsonobject.get("items");
+//                                        for (int i = 0; i < jsonArray.length(); i++) {
+//                                            //JSONObject post = (JSONObject) jsonArray.get(i);
+                                            //arrayList.add(post.getString("text"));
+                                            //arrayAdapter = new ArrayAdapter<String>(MOP_Activity_MOP_NEWS.this, android.R.layout.simple_list_item_1, arrayList);
+                                            //listView.setAdapter(arrayAdapter);
+                                            Example example = new Gson().fromJson(response.responseString, com.example.entity.Example.class);
+                                            news_adapter.setItems(example.getResponse().getItems());
+                                            news_adapter.notifyDataSetChanged();
+
+//                                        }
+//                                    } catch (JSONException e) {
+//                                        e.printStackTrace();
+//                                    }
 
 
                                 }
