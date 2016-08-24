@@ -49,8 +49,7 @@ public class NEWS_Adapter extends RecyclerView.Adapter<NEWS_Adapter.ViewHolder> 
 
         if (item.getAttachments().size() > 0) {
             Link link = item.getAttachments().get(0).getLink();
-            Photo photo = item.getAttachments().get(0).getLink().getPhoto();
-            if (link != null && photo != null) {
+            if (link != null) {
                 Picasso.with(viewHolder.itemView.getContext())
                         .load(link.getUrl())
                         .into(viewHolder.icon);

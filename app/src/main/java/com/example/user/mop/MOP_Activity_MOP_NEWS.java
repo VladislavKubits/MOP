@@ -125,26 +125,10 @@ public class MOP_Activity_MOP_NEWS extends AppCompatActivity {
                                 @Override
                                 public void onComplete(VKResponse response) {
                                     super.onComplete(response);
-
-                                    // System.out.println(response.responseString);
-//                                    try {
-//                                        JSONObject jsonobject = (JSONObject) response.json.get("response");
-//                                        JSONArray jsonArray = (JSONArray) jsonobject.get("items");
-//                                        for (int i = 0; i < jsonArray.length(); i++) {
-//                                            //JSONObject post = (JSONObject) jsonArray.get(i);
-                                            //arrayList.add(post.getString("text"));
-                                            //arrayAdapter = new ArrayAdapter<String>(MOP_Activity_MOP_NEWS.this, android.R.layout.simple_list_item_1, arrayList);
-                                            //listView.setAdapter(arrayAdapter);
-                                            Example example = new Gson().fromJson(response.responseString, com.example.entity.Example.class);
-                                            news_adapter.setItems(example.getResponse().getItems());
-                                            news_adapter.notifyDataSetChanged();
-
-//                                        }
-//                                    } catch (JSONException e) {
-//                                        e.printStackTrace();
-//                                    }
-
-
+                                    Example example = new Gson().fromJson(response.responseString, com.example.entity.Example.class);
+                                    news_adapter.setItems(example.getResponse().getItems());
+                                    news_adapter.notifyDataSetChanged();
+                                    
                                 }
                             });
 
