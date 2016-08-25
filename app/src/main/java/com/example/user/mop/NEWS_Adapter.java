@@ -6,12 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.example.entity.Item;
 import com.example.entity.Link;
-import com.example.entity.Photo;
 import com.squareup.picasso.Picasso;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,7 +48,7 @@ public class NEWS_Adapter extends RecyclerView.Adapter<NEWS_Adapter.ViewHolder> 
             Link link = item.getAttachments().get(0).getLink();
             if (link != null) {
                 Picasso.with(viewHolder.itemView.getContext())
-                        .load(link.getPhoto().getPhoto604())
+                        .load(link.getUrl())
                         .into(viewHolder.icon);
             }
 
