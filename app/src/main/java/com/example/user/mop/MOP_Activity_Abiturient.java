@@ -141,7 +141,7 @@ public class MOP_Activity_Abiturient extends AppCompatActivity {
             try {
                 Document document = Jsoup.connect(params[0]).get();
 
-                Element element = document.select(".bd fs4 com_content").first();
+                Element element = document.select(".center").first();
                 str = element.text();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -157,8 +157,8 @@ public class MOP_Activity_Abiturient extends AppCompatActivity {
         protected HashMap<String, String> doInBackground(Void... params){
             HashMap<String, String> hashMap = new HashMap<>();
             try {
-                Document document = Jsoup.connect("http://priem.tti.sfedu.ru").get();
-                Elements elements = document.select(".custom");
+                Document document = Jsoup.connect("http://mopevm.ictis.sfedu.ru/abitur/").get();
+                Elements elements = document.select(".right");
                 for(Element element : elements){
                     Element element1 = element.select("a[href]").first();
                     hashMap.put(element.text(), element1.attr("abs:href"));

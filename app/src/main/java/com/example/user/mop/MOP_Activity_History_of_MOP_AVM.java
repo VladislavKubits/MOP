@@ -141,7 +141,7 @@ public class MOP_Activity_History_of_MOP_AVM extends AppCompatActivity {
             try {
                 Document document = Jsoup.connect(params[0]).get();
 
-                Element element = document.select(".wrapper").first();
+                Element element = document.select(".center").first();
                 str = element.text();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -157,8 +157,8 @@ public class MOP_Activity_History_of_MOP_AVM extends AppCompatActivity {
         protected HashMap<String, String> doInBackground(Void... params){
             HashMap<String, String> hashMap = new HashMap<>();
             try {
-                Document document = Jsoup.connect("http://sfedu.ru/www/stat_pages22.show?p=HIS/main/M").get();
-                Elements elements = document.select(".main");
+                Document document = Jsoup.connect("http://mopevm.ictis.sfedu.ru/History/").get();
+                Elements elements = document.select(".right");
                 for(Element element : elements){
                     Element element1 = element.select("a[href]").first();
                     hashMap.put(element.text(), element1.attr("abs:href"));
