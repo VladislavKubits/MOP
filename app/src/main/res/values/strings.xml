@@ -8,7 +8,7 @@
     <string name="schedule">Расписание</string>
     <string name="About_the_department">О кафедре</string>
     <string name="Send_news_to_social_networks">Отправить новость в соцсети</string>
-    <string name="authorization">Авторизация</string>
+    <string name="authorization">Главное меню</string>
     <string name="Enrollee">Абитуриент</string>
     <string name="MOP_History">Кафедра МОП ЭВМ</string>
     <integer name="com_vk_sdk_AppId">5545742</integer>
