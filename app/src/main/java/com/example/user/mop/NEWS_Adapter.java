@@ -9,6 +9,9 @@ import android.widget.TextView;
 import com.example.entity.Item;
 import com.example.entity.Link;
 import com.squareup.picasso.Picasso;
+import com.vk.sdk.api.model.VKApiPost;
+import com.vk.sdk.api.model.VKList;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,9 +21,11 @@ import java.util.List;
 public class NEWS_Adapter extends RecyclerView.Adapter<NEWS_Adapter.ViewHolder> {
 
     private List<Item> items;
+    VKList<VKApiPost> posts;
 
-    public NEWS_Adapter() {
+    public NEWS_Adapter(VKList<VKApiPost> posts) {
         this.items = new ArrayList<>();
+        this.posts = posts;
     }
 
     public void setItems(List<Item> items) {
@@ -41,19 +46,21 @@ public class NEWS_Adapter extends RecyclerView.Adapter<NEWS_Adapter.ViewHolder> 
      */
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int i) {
-        Item item = items.get(i);
-        viewHolder.name.setText(item.getText());
 
-        if (item.getAttachments().size() > 0) {
-            Link link = item.getAttachments().get(0).getLink();
-            if (link != null) {
-                Picasso.with(viewHolder.itemView.getContext())
-                        .load(link.getUrl())
-                        .into(viewHolder.icon);
-            }
-
-
-        }
+        viewHolder.name.setText(posts.get(i).text);
+//        Item item = items.get(i);
+//        viewHolder.name.setText(item.getText());
+//
+//        if (item.getAttachments().size() > 0) {
+//            Link link = item.getAttachments().get(0).getLink();
+//            if (link != null) {
+//                Picasso.with(viewHolder.itemView.getContext())
+//                        .load(link.getUrl())
+//                        .into(viewHolder.icon);
+//            }
+//
+//
+//        }
 
 
     }
