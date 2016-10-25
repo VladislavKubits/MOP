@@ -187,7 +187,7 @@ public class MOP_Activity_MOP_NEWS extends AppCompatActivity {
 
         @Override
         public PostsHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View v = LayoutInflater.from(getApplicationContext())
+            View v = LayoutInflater.from(MOP_Activity_MOP_NEWS.this)
                     .inflate(R.layout.post_layout, parent, false);
             return new PostsHolder(v);
         }
