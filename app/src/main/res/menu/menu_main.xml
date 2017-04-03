@@ -20,11 +20,6 @@
         android:title="@string/About_the_department"
         app:showAsAction="never" />
     <item
-        android:id="@+id/Send_news_to_social_networks"
-        android:orderInCategory="100"
-        android:title="@string/Send_news_to_social_networks"
-        app:showAsAction="never" />
-    <item
         android:id="@+id/authorization"
         android:orderInCategory="100"
         android:title="@string/authorization"

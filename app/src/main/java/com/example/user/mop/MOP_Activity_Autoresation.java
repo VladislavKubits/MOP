@@ -34,10 +34,6 @@ public class MOP_Activity_Autoresation extends Activity {
         Intent intent = new Intent(this, MOP_Activity_Timetable.class);
         startActivity(intent);
     }
-    public void goToActivity_Publication(View view){
-        Intent intent = new Intent(this, MOP_Activity_Publication.class);
-        startActivity(intent);
-    }
     public void goToActivity_Abiturient(View view){
         Intent intent = new Intent(this, MOP_Activity_Abiturient.class);
         startActivity(intent);

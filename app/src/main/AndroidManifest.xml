@@ -24,7 +24,6 @@
         <activity android:name=".MOP_Activity_History_of_MOP_AVM"/>
         <activity android:name=".MOP_Activity_MOP_NEWS"/>
         <activity android:name=".MOP_Activity_Timetable"/>
-        <activity android:name=".MOP_Activity_Publication"/>
         <activity android:name=".MOP_Activity_Abiturient"/>
         <activity android:name=".MOP_Activity_GoogleSfedu"/>
         <activity android:name=".MOP_Activity_Sfedupassword"/>

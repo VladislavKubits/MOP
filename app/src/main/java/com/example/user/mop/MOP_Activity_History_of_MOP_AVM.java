@@ -105,11 +105,6 @@ public class MOP_Activity_History_of_MOP_AVM extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
-        if (id==R.id.Send_news_to_social_networks){
-            Intent intent = new Intent(this, MOP_Activity_Publication.class);
-            startActivity(intent);
-            return true;
-        }
         if (id==R.id.authorization){
             Intent intent = new Intent(this, MOP_Activity_Autoresation.class);
             startActivity(intent);
