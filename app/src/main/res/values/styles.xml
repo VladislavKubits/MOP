@@ -12,9 +12,4 @@
         <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="android:colorAccent">@color/colorAccent</item>
     </style>
-    <style name="MaterialButton" parent="Theme.AppCompat.Light">
-        <item name="colorControlHighlight">@color/MaterialSecondButton</item>
-        <item name="colorButtonNormal">@color/MaterialFirstButton</item>
-    </style>
-
 </resources>

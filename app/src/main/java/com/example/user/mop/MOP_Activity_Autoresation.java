@@ -3,11 +3,13 @@ package com.example.user.mop;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.view.View;
 
 import com.vk.sdk.util.VKUtil;
 
 import java.util.Arrays;
+import java.util.jar.Manifest;
 
 public class MOP_Activity_Autoresation extends Activity {
 
@@ -38,5 +40,6 @@ public class MOP_Activity_Autoresation extends Activity {
         Intent intent = new Intent(this, MOP_Activity_Abiturient.class);
         startActivity(intent);
     }
+
 }
 
