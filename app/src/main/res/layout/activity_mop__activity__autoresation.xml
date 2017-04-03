@@ -42,8 +42,7 @@
                 android:id="@+id/button9"
                 android:onClick="goToActivity_Abiturient"
                 android:layout_below="@+id/imageView"
-                android:layout_alignParentLeft="true"
-                android:theme="@style/MaterialButton"/>
+                android:layout_alignParentLeft="true" />
 
             <Button
                 android:layout_width="match_parent"
@@ -52,8 +51,7 @@
                 android:id="@+id/button10"
                 android:onClick="goToActivity_Timetable"
                 android:layout_below="@+id/button9"
-                android:layout_alignParentLeft="true"
-                android:theme="@style/MaterialButton"/>
+                android:layout_alignParentLeft="true" />
 
             <Button
                 android:layout_width="match_parent"
@@ -62,8 +60,7 @@
                 android:id="@+id/button11"
                 android:onClick="goToActivity_History"
                 android:layout_below="@+id/button10"
-                android:layout_alignParentLeft="true"
-                android:theme="@style/MaterialButton"/>
+                android:layout_alignParentLeft="true" />
 
             <Button
                 android:layout_width="match_parent"
@@ -72,8 +69,7 @@
                 android:id="@+id/button12"
                 android:onClick="goToActivity_NEWS"
                 android:layout_below="@+id/button11"
-                android:layout_alignParentLeft="true"
-                android:theme="@style/MaterialButton"/>
+                android:layout_alignParentLeft="true" />
 
             <TextView
                 android:layout_width="wrap_content"
