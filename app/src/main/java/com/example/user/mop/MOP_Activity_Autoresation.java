@@ -20,10 +20,7 @@ public class MOP_Activity_Autoresation extends Activity {
         String[] fingerprints = VKUtil.getCertificateFingerprint(this, this.getPackageName());
         System.out.println(Arrays.asList(fingerprints));
     }
-    public void goToActivity_Password(View view){
-        Intent intent = new Intent(this, MOP_Activity_GoogleSfedu.class);
-        startActivity(intent);
-    }
+
     public void goToActivity_History(View view){
         Intent intent = new Intent(this, MOP_Activity_History_of_MOP_AVM.class);
         startActivity(intent);
