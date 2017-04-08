@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.text.format.DateFormat;
 import android.support.design.widget.Snackbar;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
 
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.database.FirebaseListAdapter;
@@ -29,7 +30,7 @@ public class MOP_Activity_Timetable extends AppCompatActivity {
     private static int SIGN_IN_REQUEST_CODE = 1;
     private FirebaseListAdapter<MOP_Message> adapter;
     RelativeLayout activity_mop_activity_timetable;
-    Button button;
+    FloatingActionButton button;
     private Toolbar toolbar;
 
     @Override
@@ -37,7 +38,7 @@ public class MOP_Activity_Timetable extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mop_activity_timetable);
         activity_mop_activity_timetable = (RelativeLayout) findViewById(R.id.activity_chat);
-        button = (Button) findViewById(R.id.sendButton);
+        button = (FloatingActionButton) findViewById(R.id.sendButton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

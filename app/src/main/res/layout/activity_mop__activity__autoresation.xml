@@ -47,7 +47,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="РАСПИСАНИЕ"
+                android:text="ЧАТ"
                 android:id="@+id/button10"
                 android:onClick="goToActivity_Timetable"
                 android:layout_below="@+id/button9"

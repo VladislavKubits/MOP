@@ -32,7 +32,7 @@
     <item
         android:id="@+id/chat_logout"
         android:orderInCategory="100"
-        android:title="Выход"
+        android:title="@string/chat_logout"
         app:showAsAction="never" />
 
 </menu>
