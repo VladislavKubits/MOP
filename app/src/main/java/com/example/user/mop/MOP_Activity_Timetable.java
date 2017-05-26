@@ -77,7 +77,7 @@ public class MOP_Activity_Timetable extends AppCompatActivity {
 
                 textMessage.setText(model.getTextMessage());
                 autor.setText(model.getAutor());
-                timeMessage.setText(DateFormat.format("dd-MM-yyyy (HH:mm:ss)", model.getTimeMessage()));
+                timeMessage.setText(DateFormat.format("dd-MM-yy \n HH:mm", model.getTimeMessage()));
             }
         };
         listMessages.setAdapter(adapter);

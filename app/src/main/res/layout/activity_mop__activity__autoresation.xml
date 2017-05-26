@@ -30,57 +30,54 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView"
                 android:src="@drawable/autoresation3"
-                android:layout_marginTop="85dp"
-                android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="АБИТУРИЕНТ"
                 android:id="@+id/button9"
-                android:onClick="goToActivity_Abiturient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
                 android:layout_below="@+id/imageView"
-                android:layout_alignParentLeft="true" />
+                android:backgroundTint="@color/ButtomColor"
+                android:onClick="goToActivity_Abiturient"
+                android:text="АБИТУРИЕНТ" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="ЧАТ"
                 android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/ButtomColor"
                 android:onClick="goToActivity_Timetable"
+                android:text="ЧАТ"
                 android:layout_below="@+id/button9"
-                android:layout_alignParentLeft="true" />
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="13dp" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="О КАФЕДРЕ"
                 android:id="@+id/button11"
-                android:onClick="goToActivity_History"
-                android:layout_below="@+id/button10"
-                android:layout_alignParentLeft="true" />
-
-            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="НОВОСТИ"
-                android:id="@+id/button12"
-                android:onClick="goToActivity_NEWS"
-                android:layout_below="@+id/button11"
-                android:layout_alignParentLeft="true" />
+                android:backgroundTint="@color/ButtomColor"
+                android:onClick="goToActivity_History"
+                android:text="О КАФЕДРЕ"
+                android:layout_below="@+id/button10"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="18dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="МОП"
-                android:id="@+id/textView4"
-                android:textSize="80dp"
-                android:textStyle="bold|normal"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
+                android:backgroundTint="@color/ButtomColor"
+                android:onClick="goToActivity_NEWS"
+                android:text="НОВОСТИ"
+                android:layout_marginTop="13dp"
+                android:layout_below="@+id/button11"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
 
         </RelativeLayout>
     </ScrollView>
