@@ -10,9 +10,9 @@
         android:title="@string/news"
         app:showAsAction="never" />
     <item
-        android:id="@+id/schedule"
+        android:id="@+id/chat"
         android:orderInCategory="100"
-        android:title="@string/schedule"
+        android:title="@string/chat"
         app:showAsAction="never" />
     <item
         android:id="@+id/About_the_department"

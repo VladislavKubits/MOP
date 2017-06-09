@@ -95,7 +95,7 @@ public class MOP_Activity_History_of_MOP_AVM extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
-        if (id==R.id.schedule){
+        if (id==R.id.chat){
             Intent intent = new Intent(this, MOP_Activity_Timetable.class);
             startActivity(intent);
             return true;
